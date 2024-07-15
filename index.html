@@ -61,6 +61,11 @@
           <span class="font-bold">Search for:</span>
           <span x-text="search"></span>
         </p>
+
+        <!-- x-if -->
+        <template x-if="open">
+          <div class="bg-gray-100 p-2 mt-8">Template based on a condition</div>
+        </template>
       </div>
     </div>
   </body>
