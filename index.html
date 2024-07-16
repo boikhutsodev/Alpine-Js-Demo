@@ -85,6 +85,17 @@
         >
           Add Post
         </button>
+
+        <div class="my-6">
+          <!-- x-ref -->
+          <div x-ref="text">Hello World</div>
+          <button
+            @click="$refs.text.remove()"
+            class="bg-black text-white p-2 rounded-lg py-1 px-2"
+          >
+            Click me
+          </button>
+        </div>
       </div>
     </div>
   </body>
