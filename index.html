@@ -78,6 +78,13 @@
         <template x-for="post in posts">
           <div x-text="post.title"></div>
         </template>
+
+        <button
+          @click="posts.push({title: 'New Post'})"
+          class="bg-blue-800 text-white px-4 rounded-lg mt-5 py-1 px-2"
+        >
+          Add Post
+        </button>
       </div>
     </div>
   </body>
